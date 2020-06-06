@@ -1,0 +1,772 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compare</title>
+	
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="Style-Compare.css">
+	<link rel="shortcut icon" href="Images/Logo/logo.png">
+	
+	<script>
+		function first(a)
+	
+		{
+			switch(a)
+				{
+					case "Select any product for comparison":
+						document.getElementById("h2-1").innerHTML="";
+						document.getElementById("h2-2").innerHTML="";
+						document.getElementById("h2-3").innerHTML="";
+						document.getElementById("img1").src="Images/slider/Compare.jpg";
+					break;
+						
+					case "Pochette Métis Monogram Empreinte Leather":
+						document.getElementById("h2-1").innerHTML="Louis Vuittion";
+						document.getElementById("h2-2").innerHTML="Rs. 5,500";
+						document.getElementById("h2-3").innerHTML="A skillfully fashioned leather handle, braided and edge -dyed by hand, gives this Pochet te Métis in embossed Monogram Empreinte leather a luxurious feel. The Creme Beige color way is accented with Caramel-colored leather details such as a nametag and smooth detachable shoulder strap. This compact, structured handbag boasts a well-designed interior.";
+						document.getElementById("img1").src="Images/Brands/Louis Vuition/a1.jpg";
+					break;
+						
+					case "Speedy Bandoulière 25 Monogram Empreinte Leather":
+						document.getElementById("h2-1").innerHTML="Louis Vuittion";
+						document.getElementById("h2-2").innerHTML="Rs. 5,500";
+						document.getElementById("h2-3").innerHTML="Ever y feature of this Speedy is iconic: the unique shape, the leather handles. No wonder it has achieved cult status the world over. Designed for travellers in 1930 ( the name is a nod to the era’s rapid transit ) , with a strap for shoulder or cross -body wear, today’s Speedy 25 is a per fect cit y bag supple, light weight and forever in st yle. This new reading of a House icon, craf ted of embossed Empreinte leather, is a timelessly elegant bag for the fashionable woman.";
+						document.getElementById("img1").src="Images/Brands/Louis Vuition/a2.jpg";
+					break;
+						
+					case "Lockme Ever Lockme":
+						document.getElementById("h2-1").innerHTML="Louis Vuittion";
+						document.getElementById("h2-2").innerHTML="Rs. 5,500)";
+						document.getElementById("h2-3").innerHTML="The one -handle Lockme Ever bag in sof t calfskin sports a sleek, structured shape. The graphic lines of the top flap give this supple, roomy bag a modern at titude. Accented with a silver- finish LV turn lock and furnished with a leather strap for hands - free ease, it is an elegant choice for daily wear.";
+						document.getElementById("img1").src="Images/Brands/Louis Vuition/a3.jpg";
+					break;
+						
+					case "Padlock small Gucci Signature top handle":
+						document.getElementById("h2-1").innerHTML="Gucci";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="A small structured top handle bag with a key lock closure pulled straight from the archives, the key is placed in a leather key case. The shoulder strap is attached to the top handle for a simpler look that echoes a briefcase. Made in heat debossed Gucci Signature leather with a defined print and firm texture.";
+						document.getElementById("img1").src="Images/Brands/gucci/a1.jpg";
+					break;
+						
+					case "Gucci Marmont mini top handle":
+						document.getElementById("h2-1").innerHTML="Gucii";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="A new introduction to the GG Marmont line for Cruise 2019, the mini GG Marmont top handle bag has a softly structured shape and an oversized flap closure with Double G hardware. Equipped with a leather top handle and chain shoulder strap, made in matelassé chevron leather with a heart on the back.";
+						document.getElementById("img1").src="Images/Brands/gucci/a2.jpg";
+					break;	
+						
+					case "Gucci Zumi grainy leather":
+						document.getElementById("h2-1").innerHTML="Gucci";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Gucci continues to bring House icons to the forefront in unexpected ways, merging two of its most distinctive codes into one symbol: the Interlocking G Horsebit. The hardware is presented in a modern mix of silver and gold tones on a grainy leather top handle bag. A detachable strap creates multifunctionality, doubling as a shoulder bag, while the top opening frame features a hinged lock on each side for a secure closure. The Gucci Zumi line takes its name from actress and experimental musician Zumi Rosow – unconventional and modern, and at the same time evoking an inherent free spirit – Zumi's individual look creates an unexpected contrast to the structured, refined details of the bag.";
+						document.getElementById("img1").src="Images/Brands/gucci/a3.jpg";
+					break;
+						
+					case "Lady Dior embroidered":
+						document.getElementById("h2-1").innerHTML="Christian Dior";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="30 Montaigne flap bag in smooth black calfskin and CD clasp.";
+						document.getElementById("img1").src="Images/Brands/Dior/a1.jpg";
+					break;	
+						
+					case "Lady Dior ultra-matte bag":
+						document.getElementById("h2-1").innerHTML="Christian Dior";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Lady Dior bag in black calfskin embroidered with a 'Cannage' motif in mirrors and beads, adjustable shoulder strap.";
+						document.getElementById("img1").src="Images/Brands/Dior/a2.jpg";
+					break;	
+						
+					case "Lady Dior ultra-matte":
+						document.getElementById("h2-1").innerHTML="Christian Dior";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="Lady Dior flap bag in matte black 'Cannage' calfskin, shoulder strap.";
+						document.getElementById("img1").src="Images/Brands/Dior/a3.jpg";
+					break;
+						
+					case "Montblanc Signature Ladies Travel Wallet":
+						document.getElementById("h2-1").innerHTML="Montblanc";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Ladies Travel Wallet in mocha printed fabric combined with Australian Calfskin, pockets for 12 credit cards,zipped large pocket, pocket for flight ticket & 3 additional pockets. Measures 12.5 x 22.5 cm.";
+						document.getElementById("img1").src="Images/Brands/Montblanc/a1.jpg";
+					break;
+						
+										
+					case "Montblanc Meisterstuck Beige Soft Grain Leather":
+						document.getElementById("h2-1").innerHTML="Montblanc";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Montblanc Meisterstuck wallet 8cc wallet and coin case made of Italian beige soft-grain calfskin leather and jacquard (Montblanc logo) lining. Montblanc emblem with palladium-coated ring. Internal Organization: 8 pockets for credit cards, 2 compartments for banknotes, a coin case with zip and 2 additional pockets. Dimensions: 14.5 mm x 11 cm.";
+						document.getElementById("img1").src="Images/Brands/Montblanc/a3.jpg";
+					break;
+						
+					case "Ryder Mini Satchel":
+						document.getElementById("h2-1").innerHTML="Satchel";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="Silhouette: Mini Satchel Tech Compatibility: iPhone® 6 Plus, iPhone® 7 Plus, iPhone® 8 Plus Exterior Material: Leather Interior Details: 1 Slide Pocket, 1 Zipper Pocket.";
+						document.getElementById("img1").src="Images/Products/Purses/a1.jpg";
+					break;
+						
+					case "Ryder Satchel Blue":
+						document.getElementById("h2-1").innerHTML="Satchel";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Silhouette: Satchel Tech Compatibility: iPhone® 6 Plus, iPhone® 7 Plus, iPhone® 8 Plus, iPad® Air Exterior Material: Leather/Leather, Suede Trim Interior Details: 1 Zipper Pocket, 2 Slide Pockets.";
+						document.getElementById("img1").src="Images/Products/Purses/a2.jpg";
+					break;
+						
+					case "Ryder Satchel Brown":
+						document.getElementById("h2-1").innerHTML="Satchel";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="Silhouette: Satchel Tech Compatibility: iPhone® 6, iPhone® 7, iPhone® 8 Exterior Material: Leather Interior Details: 1 Zipper Pocket, 2 Slide Pockets.";
+						document.getElementById("img1").src="Images/Products/Purses/a3.jpg";
+					break;
+						
+					case "Derrick RFID Flip ID Bifold":
+						document.getElementById("h2-1").innerHTML="Derrick RFID";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Silhouette: Bifold with Flip ID Exterior Material: Leather/Leather Trim Interior Details: 1 Bill Compartment, 2 ID Windows, 2 Slide Pockets, 6 Credit Card Slots.";
+						document.getElementById("img1").src="Images/Products/Wallets/a1.jpg";
+					break;
+						
+					case "Tate RFID Large Coin Pocket Bifold":
+						document.getElementById("h2-1").innerHTML="Derrick RFID";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="Silhouette: Bifold Exterior Material: 100% Leather Interior Details: 8 Credit Card Slots, 2 Slip Pockets, 1 Bill Compartment.";
+						document.getElementById("img1").src="Images/Products/Wallets/a2.jpg";
+					break;	
+					
+					case "Derrick RFID Flip ID Bifold Black":
+						document.getElementById("h2-1").innerHTML="Derrick RFID";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Silhouette: Bifold with Flip ID Exterior Material: Leather/Leather Trim Interior Details: 1 Bill Compartment, 2 ID Windows, 2 Slide Pockets, 6 Credit Card Slots.";
+						document.getElementById("img1").src="Images/Products/Wallets/a3.jpg";
+					break;
+						
+					case "Lainie Clutch":
+						document.getElementById("h2-1").innerHTML="Lainie";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="Silhouette: Clutch Exterior Material: Leather Interior Details: 1 ID Window, 2 Bill Compartments, 9 Credit Card Slots Warranty: 1 Year Limited.";
+						document.getElementById("img1").src="Images/Products/Clutches/a1.jpg";
+					break;
+						
+					case "Emma RFID Large Zip Clutch":
+						document.getElementById("h2-1").innerHTML="Emma RFID";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Silhouette: Large Zip Clutch Tech Compatibility: iPhone® 6 Plus, 7 Plus, 8 Plus Exterior Material: Leather Interior Details: 2 Bill Compartments, 12 Credit Card Slots, 1 Zipper Pocket and 3 Gusseted Pockets Warranty: 1 Year Limited.";
+						document.getElementById("img1").src="Images/Products/Clutches/a2.jpg";
+					break;
+						
+					case "Liza Zip Around Clutch":
+						document.getElementById("h2-1").innerHTML="Liza";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="Silhouette: Zip Around Clutch Exterior Material: Leather/Polyurethane Trim Interior Details: 1 ID Window, 1 Zipper Pocket, 2 Bill Compartments, 2 Gusseted Pockets, 13 Credit Card Slots Warranty: 1 Year Limited.";
+						document.getElementById("img1").src="Images/Products/Clutches/a3.jpg";
+					break;
+						
+					case "Rachel Tote Black":
+						document.getElementById("h2-1").innerHTML="Rachel";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Silhouette: Tote With Zipper Tech Compatibility: 13 Laptop Exterior Material: Leather/Polyurethane Trim Interior Details: 1 Zipper Pocket, 2 Slide Pockets Measurements: 14 L x 4 W x 13 H Handles/Straps: 2 Handles";
+						document.getElementById("img1").src="Images/Products/Totebags/a2.jpg";
+					break;	
+					
+					case "Rachel Tote Check":
+						document.getElementById("h2-1").innerHTML="Rachel";
+						document.getElementById("h2-2").innerHTML="Rs 6,000";
+						document.getElementById("h2-3").innerHTML="Silhouette: Tote With Zipper Tech Compatibility: 13 Laptop Exterior Material: 100% PVC/Polyurethane Trim Interior Details: 1 Zipper Pocket, 2 Slide Pockets Measurements: 14 L x 4 W x 13 H Handles/Straps: 2 Handles";
+						document.getElementById("img1").src="Images/Products/Totebags/a2.jpg";
+					break;
+						
+					case "Rachel Tote":
+						document.getElementById("h2-1").innerHTML="Rachel";
+						document.getElementById("h2-2").innerHTML="Rs 5,500";
+						document.getElementById("h2-3").innerHTML="Silhouette: Tote With Zipper Tech Compatibility: 13 Laptop Exterior Material 100% PVC/Polyurethane Trim Interior Details: 1 Zipper Pocket, 2 Slide Pockets Measurements: 14 L x 4 W x 13 H Handles/Straps: 2 Handles";
+						document.getElementById("img1").src="Images/Products/Totebags/a3.jpg";
+					break;		
+						
+				}				
+		}
+	
+		function second(a)
+	
+		{
+			switch(a)
+				{
+					case "Select any product for comparison":
+						document.getElementById("h2-4").innerHTML="";
+						document.getElementById("h2-5").innerHTML="";
+						document.getElementById("h2-6").innerHTML="";
+						document.getElementById("img2").src="Images/slider/Compare.jpg";
+					break;
+						
+					case "Pochette Métis Monogram Empreinte Leather":
+						document.getElementById("h2-4").innerHTML="Louis Vuittion";
+						document.getElementById("h2-5").innerHTML="Rs. 5,500";
+						document.getElementById("h2-6").innerHTML="A skillfully fashioned leather handle, braided and edge -dyed by hand, gives this Pochet te Métis in embossed Monogram Empreinte leather a luxurious feel. The Creme Beige color way is accented with Caramel-colored leather details such as a nametag and smooth detachable shoulder strap. This compact, structured handbag boasts a well-designed interior.";
+						document.getElementById("img2").src="Images/Brands/Louis Vuition/a1.jpg";
+					break;
+						
+					case "Speedy Bandoulière 25 Monogram Empreinte Leather":
+						document.getElementById("h2-4").innerHTML="Louis Vuittion";
+						document.getElementById("h2-5").innerHTML="Rs. 5,500";
+						document.getElementById("h2-6").innerHTML="Ever y feature of this Speedy is iconic: the unique shape, the leather handles. No wonder it has achieved cult status the world over. Designed for travellers in 1930 ( the name is a nod to the era’s rapid transit ) , with a strap for shoulder or cross -body wear, today’s Speedy 25 is a per fect cit y bag supple, light weight and forever in st yle. This new reading of a House icon, craf ted of embossed Empreinte leather, is a timelessly elegant bag for the fashionable woman.";
+						document.getElementById("img2").src="Images/Brands/Louis Vuition/a2.jpg";
+					break;
+						
+					case "Lockme Ever Lockme":
+						document.getElementById("h2-4").innerHTML="Louis Vuittion";
+						document.getElementById("h2-5").innerHTML="Rs. 5,500)";
+						document.getElementById("h2-6").innerHTML="The one -handle Lockme Ever bag in sof t calfskin sports a sleek, structured shape. The graphic lines of the top flap give this supple, roomy bag a modern at titude. Accented with a silver- finish LV turn lock and furnished with a leather strap for hands - free ease, it is an elegant choice for daily wear.";
+						document.getElementById("img2").src="Images/Brands/Louis Vuition/a3.jpg";
+					break;
+						
+					case "Padlock small Gucci Signature top handle":
+						document.getElementById("h2-4").innerHTML="Gucci";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="A small structured top handle bag with a key lock closure pulled straight from the archives, the key is placed in a leather key case. The shoulder strap is attached to the top handle for a simpler look that echoes a briefcase. Made in heat debossed Gucci Signature leather with a defined print and firm texture.";
+						document.getElementById("img2").src="Images/Brands/gucci/a1.jpg";
+					break;
+						
+					case "Gucci Marmont mini top handle":
+						document.getElementById("h2-4").innerHTML="Gucii";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="A new introduction to the GG Marmont line for Cruise 2019, the mini GG Marmont top handle bag has a softly structured shape and an oversized flap closure with Double G hardware. Equipped with a leather top handle and chain shoulder strap, made in matelassé chevron leather with a heart on the back.";
+						document.getElementById("img2").src="Images/Brands/gucci/a2.jpg";
+					break;	
+						
+					case "Gucci Zumi grainy leather":
+						document.getElementById("h2-4").innerHTML="Gucci";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Gucci continues to bring House icons to the forefront in unexpected ways, merging two of its most distinctive codes into one symbol: the Interlocking G Horsebit. The hardware is presented in a modern mix of silver and gold tones on a grainy leather top handle bag. A detachable strap creates multifunctionality, doubling as a shoulder bag, while the top opening frame features a hinged lock on each side for a secure closure. The Gucci Zumi line takes its name from actress and experimental musician Zumi Rosow – unconventional and modern, and at the same time evoking an inherent free spirit – Zumi's individual look creates an unexpected contrast to the structured, refined details of the bag.";
+						document.getElementById("img2").src="Images/Brands/gucci/a3.jpg";
+					break;
+						
+					case "Lady Dior embroidered":
+						document.getElementById("h2-4").innerHTML="Christian Dior";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="30 Montaigne flap bag in smooth black calfskin and CD clasp.";
+						document.getElementById("img2").src="Images/Brands/Dior/a1.jpg";
+					break;	
+						
+					case "Lady Dior ultra-matte bag":
+						document.getElementById("h2-4").innerHTML="Christian Dior";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Lady Dior bag in black calfskin embroidered with a 'Cannage' motif in mirrors and beads, adjustable shoulder strap.";
+						document.getElementById("img2").src="Images/Brands/Dior/a2.jpg";
+					break;	
+						
+					case "Lady Dior ultra-matte":
+						document.getElementById("h2-4").innerHTML="Christian Dior";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="Lady Dior flap bag in matte black 'Cannage' calfskin, shoulder strap.";
+						document.getElementById("img2").src="Images/Brands/Dior/a3.jpg";
+					break;
+						
+					case "Montblanc Signature Ladies Travel Wallet":
+						document.getElementById("h2-4").innerHTML="Montblanc";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Ladies Travel Wallet in mocha printed fabric combined with Australian Calfskin, pockets for 12 credit cards,zipped large pocket, pocket for flight ticket & 3 additional pockets. Measures 12.5 x 22.5 cm.";
+						document.getElementById("img2").src="Images/Brands/Montblanc/a1.jpg";
+					break;
+						
+										
+					case "Montblanc Meisterstuck Beige Soft Grain Leather":
+						document.getElementById("h2-4").innerHTML="Montblanc";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Montblanc Meisterstuck wallet 8cc wallet and coin case made of Italian beige soft-grain calfskin leather and jacquard (Montblanc logo) lining. Montblanc emblem with palladium-coated ring. Internal Organization: 8 pockets for credit cards, 2 compartments for banknotes, a coin case with zip and 2 additional pockets. Dimensions: 14.5 mm x 11 cm.";
+						document.getElementById("img2").src="Images/Brands/Montblanc/a3.jpg";
+					break;
+						
+					case "Ryder Mini Satchel":
+						document.getElementById("h2-4").innerHTML="Satchel";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="Silhouette: Mini Satchel Tech Compatibility: iPhone® 6 Plus, iPhone® 7 Plus, iPhone® 8 Plus Exterior Material: Leather Interior Details: 1 Slide Pocket, 1 Zipper Pocket.";
+						document.getElementById("img2").src="Images/Products/Purses/a1.jpg";
+					break;
+						
+					case "Ryder Satchel Blue":
+						document.getElementById("h2-4").innerHTML="Satchel";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Silhouette: Satchel Tech Compatibility: iPhone® 6 Plus, iPhone® 7 Plus, iPhone® 8 Plus, iPad® Air Exterior Material: Leather/Leather, Suede Trim Interior Details: 1 Zipper Pocket, 2 Slide Pockets.";
+						document.getElementById("img2").src="Images/Products/Purses/a2.jpg";
+					break;
+						
+					case "Ryder Satchel Brown":
+						document.getElementById("h2-4").innerHTML="Satchel";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="Silhouette: Satchel Tech Compatibility: iPhone® 6, iPhone® 7, iPhone® 8 Exterior Material: Leather Interior Details: 1 Zipper Pocket, 2 Slide Pockets.";
+						document.getElementById("img2").src="Images/Products/Purses/a3.jpg";
+					break;
+						
+					case "Derrick RFID Flip ID Bifold":
+						document.getElementById("h2-4").innerHTML="Derrick RFID";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Silhouette: Bifold with Flip ID Exterior Material: Leather/Leather Trim Interior Details: 1 Bill Compartment, 2 ID Windows, 2 Slide Pockets, 6 Credit Card Slots.";
+						document.getElementById("img2").src="Images/Products/Wallets/a1.jpg";
+					break;
+						
+					case "Tate RFID Large Coin Pocket Bifold":
+						document.getElementById("h2-4").innerHTML="Derrick RFID";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="Silhouette: Bifold Exterior Material: 100% Leather Interior Details: 8 Credit Card Slots, 2 Slip Pockets, 1 Bill Compartment.";
+						document.getElementById("img2").src="Images/Products/Wallets/a2.jpg";
+					break;	
+					
+					case "Derrick RFID Flip ID Bifold Black":
+						document.getElementById("h2-4").innerHTML="Derrick RFID";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Silhouette: Bifold with Flip ID Exterior Material: Leather/Leather Trim Interior Details: 1 Bill Compartment, 2 ID Windows, 2 Slide Pockets, 6 Credit Card Slots.";
+						document.getElementById("img2").src="Images/Products/Wallets/a3.jpg";
+					break;
+						
+					case "Lainie Clutch":
+						document.getElementById("h2-4").innerHTML="Lainie";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="Silhouette: Clutch Exterior Material: Leather Interior Details: 1 ID Window, 2 Bill Compartments, 9 Credit Card Slots Warranty: 1 Year Limited.";
+						document.getElementById("img2").src="Images/Products/Clutches/a1.jpg";
+					break;
+						
+					case "Emma RFID Large Zip Clutch":
+						document.getElementById("h2-4").innerHTML="Emma RFID";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Silhouette: Large Zip Clutch Tech Compatibility: iPhone® 6 Plus, 7 Plus, 8 Plus Exterior Material: Leather Interior Details: 2 Bill Compartments, 12 Credit Card Slots, 1 Zipper Pocket and 3 Gusseted Pockets Warranty: 1 Year Limited.";
+						document.getElementById("img2").src="Images/Products/Clutches/a2.jpg";
+					break;
+						
+					case "Liza Zip Around Clutch":
+						document.getElementById("h2-4").innerHTML="Liza";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="Silhouette: Zip Around Clutch Exterior Material: Leather/Polyurethane Trim Interior Details: 1 ID Window, 1 Zipper Pocket, 2 Bill Compartments, 2 Gusseted Pockets, 13 Credit Card Slots Warranty: 1 Year Limited.";
+						document.getElementById("img2").src="Images/Products/Clutches/a3.jpg";
+					break;
+						
+					case "Rachel Tote Black":
+						document.getElementById("h2-4").innerHTML="Rachel";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Silhouette: Tote With Zipper Tech Compatibility: 13 Laptop Exterior Material: Leather/Polyurethane Trim Interior Details: 1 Zipper Pocket, 2 Slide Pockets Measurements: 14 L x 4 W x 13 H Handles/Straps: 2 Handles";
+						document.getElementById("img2").src="Images/Products/Totebags/a2.jpg";
+					break;	
+					
+					case "Rachel Tote Check":
+						document.getElementById("h2-4").innerHTML="Rachel";
+						document.getElementById("h2-5").innerHTML="Rs 6,000";
+						document.getElementById("h2-6").innerHTML="Silhouette: Tote With Zipper Tech Compatibility: 13 Laptop Exterior Material: 100% PVC/Polyurethane Trim Interior Details: 1 Zipper Pocket, 2 Slide Pockets Measurements: 14 L x 4 W x 13 H Handles/Straps: 2 Handles";
+						document.getElementById("img2").src="Images/Products/Totebags/a2.jpg";
+					break;
+						
+					case "Rachel Tote":
+						document.getElementById("h2-4").innerHTML="Rachel";
+						document.getElementById("h2-5").innerHTML="Rs 5,500";
+						document.getElementById("h2-6").innerHTML="Silhouette: Tote With Zipper Tech Compatibility: 13 Laptop Exterior Material 100% PVC/Polyurethane Trim Interior Details: 1 Zipper Pocket, 2 Slide Pockets Measurements: 14 L x 4 W x 13 H Handles/Straps: 2 Handles";
+						document.getElementById("img2").src="Images/Products/Totebags/a3.jpg";
+					break;		
+						
+					
+				}				
+		}
+		
+	</script>
+	
+</head>
+
+<body class="lead text-uppercase">
+
+<!------------------------------------navbar starts----------------------------------->
+	<nav class="navbar navbar-expand-lg navbar-dark leadnav">
+		<div class="container">
+  		<a class="navbar-brand " href="../index.html"><div id="br-lg"><img src="Images/Logo/logob.png" alt="brand-logo"></div></a>
+		
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    	<span class="fa fa-list text-white"></span>
+  		</button>
+
+  	<div class="collapse navbar-collapse" id="navbar">
+    	<ul class="navbar-nav ml-auto">
+     				<li class="nav-item pr-4">
+        				<a class="nav-link" href="../index.html">
+						<span class="fa fa-home"></span>
+						&nbsp;Home
+					</a>
+      				</li>
+					
+      		<li class="nav-item dropdown pr-4">
+				
+        				<a href="Products.html" class="nav-link dropdown-toggle" id="navbarDropdownfirst" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          				<span class="fa fa-briefcase"></span>&nbsp;Products
+      			    	</a>
+				
+        	<div class="dropdown-menu" aria-labelledby="navbarDropdownfirst">
+
+				<!-----------------------  .container ----------------------->    
+          		<div class="container">
+           			<div class="row">
+              			<div class="col-lg-3 col-md-3 col-sm-12 ">
+                				
+    						<a class="nav-link navl" href="Purses.html">Purses</a>
+									
+							<div class="card img-fluid img-thumbnail nav1 blink-nav"> 
+								<a href="Purses.html">
+									<img alt="img" src="Images/navbar/1.png" class="img-fluid img-nav">
+									<div class="overlay-nav leadnav1">variety of purses and handbags available for men and women</div>
+									
+								</a>
+								
+							</div>
+							
+						</div>
+						
+						<div class="col-lg-3 col-md-3 col-sm-12">
+
+
+							<a class="nav-link navl" href="Wallets.html">Wallets</a>
+							<div class="card img-fluid img-thumbnail nav1 blink-nav">
+								<a href="Wallets.html">
+									<img alt="img" src="Images/navbar/2.png" class="img-fluid img-nav">
+									<div class="overlay-nav leadnav1">Beautiful wallets for men and women available here</div>
+								</a>
+							</div>
+
+						</div>	
+						<div class="col-lg-3 col-md-3 col-sm-12">
+                				
+                			
+							<a class="nav-link navl" href="Clutches.html">Clutches</a>
+							<div class="card img-fluid img-thumbnail nav1 blink-nav">
+								<a href="Clutches.html">
+									<img alt="img" src="Images/navbar/3.png" class="img-fluid img-nav">
+									<div class="overlay-nav leadnav1">we have nearly all kinds of clutches for men and women</div>
+								</a>
+							</div>
+										
+						</div>		
+						<div class="col-lg-3 col-md-3 col-sm-12">
+                				
+                				
+							<a class="nav-link navl" href="Totebags.html">Tote Bags</a>
+								<div class="card img-fluid img-thumbnail nav1 blink-nav">
+									<a href="Totebags.html">
+										<img alt="img" src="Images/navbar/4.png" class="img-fluid img-nav">
+										<div class="overlay-nav leadnav1">tote bags are used for shopping, so if u like shopping then buy our tote bags</div>
+									</a>
+								</div>
+								
+						</div>
+									
+              					
+              			
+              			
+						
+              			<!-- /.col -->
+            		</div>
+          		</div>
+          		<!-----------------------  /.container ----------------------->  
+
+
+        	</div>
+      		</li>
+					
+      		<li class="nav-item dropdown pr-4">
+        				<a class="nav-link dropdown-toggle" href="Brands.html" id="navbarDropdownsecond" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          				<span class="fa fa-star"></span>&nbsp;Brands
+      			    	</a>
+				
+        	<div class="dropdown-menu" aria-labelledby="navbarDropdownsecond">
+
+          	<!----------------------- .container ------------------------>
+          		<div class="container">
+           			<div class="row">
+              			<div class="col-lg-3 col-md-3 col ">
+                				
+                			
+							<a class="nav-link navl" href="Louis Vuittion.html">louis vuitton</a>
+								<div class="card img-fluid img-thumbnail nav1 blink-nav">
+									<a href="Louis Vuittion.html">
+										<img alt="img" src="Images/navbar/5.png" class="img-fluid img-nav">
+										<div class="overlay-nav leadnav1">Louis Vuitton is one of the world's leading international fashion houses</div>
+									</a>
+								</div>
+									
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-12">
+                				
+							<a class="nav-link navl" href="Gucci.html">Gucci</a>
+								<div class="card img-fluid img-thumbnail nav1 blink-nav">
+									<a href="Gucci.html">
+										<img alt="img" src="Images/navbar/6.png" class="img-fluid img-nav">
+										<div class="overlay-nav leadnav1">Influential, innovative and progressive, Gucci is reinventing a wholly modern approach to fashion</div>
+									</a>
+								</div>
+								
+						</div>	
+						<div class="col-lg-3 col-md-3 col-sm-12">
+                			
+							<a class="nav-link navl" href="Christian Dior.html">Christian Dior</a>
+								<div class="card img-fluid img-thumbnail nav1 blink-nav">
+									<a href="Christian Dior.html">
+										<img alt="img" src="Images/navbar/7.png" class="img-fluid img-nav">
+										<div class="overlay-nav leadnav1">Christian Dior is known for its valuable outwear products and accessories</div>
+									</a>
+								</div>
+								
+						</div>		
+						<div class="col-lg-3 col-md-3 col-sm-12">
+                				
+                			
+							<a class="nav-link navl" href="Montblanc.html">Montblanc</a>
+								<div class="card img-fluid img-thumbnail nav1 blink-nav">
+									<a href="Montblanc.html">
+										<img alt="img" src="Images/navbar/8.png"  class="img-fluid img-nav">
+										<div class="overlay-nav leadnav1">Montblanc’s tale began with the creation of Meisterstück fountain pen in 1924.</div>
+									</a>
+								</div>
+								
+						</div>
+              			<!-- /.col -->
+            		</div>
+          		</div>
+          		<!-----------------------  /.container ----------------------->
+
+
+        	</div>
+      		</li>
+					
+      			<li class="nav-item pr-4">
+					<a class="nav-link" href="../About.html">
+						<span class="fa fa-info-circle"></span>
+						&nbsp;About Us
+					</a>
+				</li>
+				
+				<li class="nav-item pr-4">
+					<a class="nav-link" href="../Contact.html">
+						<span class="fa fa-mobile-phone"></span>
+						&nbsp;Contact Us
+					</a>
+				</li>
+
+    	</ul>
+  	</div>
+	</div>
+	</nav>
+<!-------------------------------------navbar ends-------------------------------->	
+<!-----------------------------------compare method------------------------------->	
+	
+	<div class="container-bg pt-5 pb-5" id="full-width-1">
+		<div class="container-fluid full-bg pt-4 pb-4">
+			<div class="container">
+				<div class="row"><div class="col-12 text-center display-2 text-white">Compare Products</div></div>
+			<div class="row">
+			<!--col-1-->
+			<div class="col-lg-6 col-md-6 col-sm-12 mt-3 mb-3 pt-3 pb-3">
+				<!--card outside-->
+				<div class="card">
+					
+					<select id="product1" onChange="first(this.value)">
+						
+						<option>Select any product for comparison</option>
+						<option>Pochette Métis Monogram Empreinte Leather</option>
+						<option>Speedy Bandoulière 25 Monogram Empreinte Leather</option>
+						<option>Lockme Ever Lockme</option>
+						<option>Padlock small Gucci Signature top handle</option>
+						<option>Gucci Marmont mini top handle</option>
+						<option>Fun Bucket for kids</option>
+						<option>Gucci Zumi grainy leather</option>
+						<option>Lady Dior embroidered</option>
+						<option>Lady Dior ultra-matte bag</option>
+						<option>Lady Dior ultra-matte</option>
+						<option>Montblanc Signature Ladies Travel Wallet</option>
+						<option>Montblanc Meisterstuck Beige Soft Grain Leather</option>
+						<option>Ryder Mini Satchel</option>
+						<option>Ryder Satchel Blue</option>
+						<option>Ryder Satchel Brown</option>
+						<option>Derrick RFID Flip ID Bifold</option>
+						<option>Tate RFID Large Coin Pocket Bifold</option>
+						<option>Derrick RFID Flip ID Bifold Black</option>
+						<option>Lainie Clutch</option>
+						<option>Emma RFID Large Zip Clutch</option>
+						<option>Liza Zip Around Clutch</option>
+						<option>Rachel Tote Black</option>
+						<option>Rachel Tote Check</option>
+						<option>Rachel Tote</option>	
+						
+					</select>
+					
+					<!--card Inside-->
+					<div class="card img-fluid">						
+						<img id="img1" src="Images/slider/Compare.jpg" alt="images" class="img-fluid">
+						
+						<div class="details">
+							<h2><span>Name : <span id="h2-1"></span></span><br><br>
+								<span>price : <span id="h2-2"></span></span><br><br>
+								<span>product Details : <br><br> <span id="h2-3"></span></span></h2>
+						</div>
+					</div>
+					
+					<!--/card Inside-->
+					
+				</div>
+				<!--/card outside-->
+			
+			
+			</div>
+			<!--/col-1-->
+			
+			<!--col-2-->
+			<div class="col-lg-6 col-md-6 col-sm-12 mt-3 mb-3 pt-3 pb-3">
+				
+				<!--card outside-->
+				<div class="card">
+					
+					<select id="product2" onChange="second(this.value)">
+						
+						<option>Select any product for comparison</option>
+						<option>Pochette Métis Monogram Empreinte Leather</option>
+						<option>Speedy Bandoulière 25 Monogram Empreinte Leather</option>
+						<option>Lockme Ever Lockme</option>
+						<option>Padlock small Gucci Signature top handle</option>
+						<option>Gucci Marmont mini top handle</option>
+						<option>Gucci Zumi grainy leather</option>	
+						<option>Lady Dior embroidered</option>
+						<option>Lady Dior ultra-matte bag</option>
+						<option>Lady Dior ultra-matte</option>
+						<option>Montblanc Signature Ladies Travel Wallet</option>
+						<option>Montblanc Sartorial Saffiano Long Leather Wallet</option>
+						<option>Montblanc Meisterstuck Beige Soft Grain Leather</option>
+						<option>Ryder Mini Satchel</option>
+						<option>Ryder Satchel Blue</option>
+						<option>Ryder Satchel Brown</option>
+						<option>Derrick RFID Flip ID Bifold</option>
+						<option>Tate RFID Large Coin Pocket Bifold</option>
+						<option>Derrick RFID Flip ID Bifold Black</option>
+						<option>Lainie Clutch</option>
+						<option>Emma RFID Large Zip Clutch</option>
+						<option>Liza Zip Around Clutch</option>
+						<option>Rachel Tote Black</option>
+						<option>Rachel Tote Check</option>
+						<option>Rachel Tote</option>
+						
+					</select>
+					
+					<!--card inside-->
+					<div class="card">		
+						<img id="img2" src="Images/Slider/Compare.jpg" class="img-fluid" alt="images">
+						
+						<div class="details">
+							<h2><span>Name : <span id="h2-4"></span></span><br><br>
+								<span>price : <span id="h2-5"></span></span><br><br>
+								<span>product Details : <br><br> <span id="h2-6"></span></span></h2>
+						</div>
+					</div>
+					<!--/card inside-->
+					
+				</div>
+				<!--/card outside-->
+			</div>
+			<!--/col-2-->
+		</div>
+	</div>
+	</div>
+	</div>
+<!--------------------------------------/compare method--------------------------------->		
+<!-----------------------------------jumbo footer Starts------------------------------->
+	<!-- Footer -->
+<div class="container-bg" id="full-width-4">
+	<div class="container-fluid full-bg pt-5">
+  <!-- Footer Links -->
+  <div class="container">
+
+    <!-- Grid row-->
+    <div class="row text-center d-flex justify-content-center">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h5 class="text-uppercase font-weight-bold">
+          <a href="index.html" class="text-white lead2">Home</a>
+        </h5>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h5 class="text-uppercase font-weight-bold">
+          <a href="Pages/Products.html" class="text-white lead2">Products</a>
+        </h5>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h5 class="text-uppercase font-weight-bold">
+          <a href="Pages/Brands.html" class="text-white lead2">Brands</a>
+        </h5>
+      </div>
+      <!-- Grid column -->
+		
+	  <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h5 class="text-uppercase font-weight-bold">
+          <a href="Pages/Compare.html" class="text-white lead2">Compare</a>
+        </h5>
+      </div>
+      <!-- Grid column -->
+		
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h5 class="text-uppercase font-weight-bold">
+          <a href="About.html" class="text-white lead2">About</a>
+        </h5>
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 mb-3">
+        <h5 class="text-uppercase font-weight-bold">
+          <a href="Contact.html" class="text-white lead2">Contact</a>
+        </h5>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <hr class="bg-white" style="margin: 0 1%;">
+
+    <!-- Grid row-->
+    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4 text-white">
+
+      <!-- Grid column -->
+      <div class="col-lg-10 col-md-10 col-12 mt-3 cl leadf">
+        <p style="line-height: 2rem">NexTag is the leading comparison shopping site for products, financial services, travel, automobiles, education and more. At the core of NexTag are proprietary technologies and algorithms that enable shoppers to quickly compare prices and find the best deals on millions of products and services, making NexTag the Search Engine for Shoppers.</p>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row-->
+    <hr class="bg-white" style="margin: 0% 1% 5%;">
+
+    
+  </div>
+  <!-- Footer Links -->
+
+	</div> 
+	</div> 
+<!-- Footer -->
+
+<!----------------------------------jumbo footer ends--------------------------------->
+		
+<!-------------------------------------footer starts---------------------------------->		
+	<footer class="f1 ">
+		<h5 class="pt-2">
+		<p class="leadf font-weight-normal"><sup class="font-weight-bold">&copy;</sup> <a href="Home.html"> <img alt="img" src="Images/Logo/cnlogo.png"  class="pb-1"> </a> Nextag. All Rights Reserved.</p>
+		</h5>
+	</footer>
+<!--------------------------------------footer ends----------------------------------->	
+	
+	
+
+</body>
+	
+<script src="js/bootstrap.min.js"></script>	
+<script src="js/jquery.min.js"></script>
+
+	
+</html>

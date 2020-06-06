@@ -1,0 +1,36 @@
+
+#form_container
+{
+	margin: 0 auto;
+	margin-top:15px;
+	background: rgba(158,50,28,0.8);	
+	color:#fff;
+	margin-top: 50px;
+}
+body
+{
+	background-color: #000;
+	background-image: url("../Images/img/3.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	
+
+}
+.upload-btn-wrapper 
+{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] 
+{
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+

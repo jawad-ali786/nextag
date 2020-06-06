@@ -1,0 +1,504 @@
+@charset "utf-8";
+/* CSS Document */
+.full-bg
+{
+    height: 100%;
+    background-color: rgba(63,63,52,0.60);
+    color: transparent;
+}
+.lead
+{font-size: 1rem;}
+@media only screen and (max-width : 320px)
+{
+	.lead
+	{
+	font-size: 0.3rem;
+	}
+	.lead1
+	{
+	font-size: 0.7rem;
+	}
+	.lead2
+	{
+	font-size: 0.7rem;	
+	}
+	.display-2
+	{
+	font-size: 1.5rem;
+	}
+	.display-4
+	{
+	font-size: 1.2rem;
+	}
+	h2
+	{
+	font-size: 1.2em;
+	}
+	.leadnav
+	{
+	font-size: 1rem;
+	}
+	.leadnav1
+	{
+	font-size: 0.6rem;
+	}
+	.lead-card
+	{
+	font-size: 0.3rem;
+	}
+	.leadf
+	{
+	font-size: 0.6rem;	
+	}
+}
+@media only screen and (min-width : 320px) and (max-width : 480px)
+{
+	.lead
+	{
+	font-size: 0.45rem;
+	}
+	.lead1
+	{
+	font-size: 0.9rem;
+	}
+	.lead2
+	{
+	font-size: 0.9rem;	
+	}
+	.display-2
+	{
+	font-size: 2.5rem;
+	}
+	.display-4
+	{
+	font-size: 1.7rem;
+	}
+	h2
+	{
+	font-size: 1.2em;
+	}
+	.leadnav
+	{
+	font-size: 1rem;
+	}
+	.leadnav1
+	{
+	font-size: 0.7rem;
+	}
+	.lead-card
+	{
+	font-size: 0.56rem;
+	}
+	.leadf
+	{
+	font-size: 0.6rem;	
+	}
+}
+@media only screen and (min-width : 481px) and (max-width : 768px)
+{
+	.lead
+	{
+	font-size: 0.7rem;
+	}
+	.lead1
+	{
+	font-size: 1.1rem;
+	}
+	.lead2
+	{
+	font-size: 1.1rem;	
+	}
+	.display-2
+	{
+	font-size: 3.5rem;
+	}
+	.display-4
+	{
+	font-size: 2.2rem;
+	}
+	h2
+	{
+	font-size: 1.4em;
+	}
+	.leadnav
+	{
+	font-size: 1rem;
+	}
+	.lead-card
+	{
+	font-size: 0.8rem;
+	}
+	.leadnav1
+	{
+	font-size: 0.7rem;
+	}
+	.leadf
+	{
+	font-size: 0.8rem;	
+	}
+}
+@media only screen and (min-width:769px) and (max-width : 1024px)
+{
+	.lead
+	{
+	font-size: 0.6rem;
+	}
+	.lead1
+	{
+	font-size: 1.3rem;
+	}
+	.lead2
+	{
+	font-size: 1.3rem;	
+	}
+	.display-2
+	{
+	font-size: 4.5rem;
+	}
+	.display-4
+	{
+	font-size: 2.7rem;
+	}
+	h2
+	{
+	font-size: 1.2em;
+	}
+	.leadnav
+	{
+	font-size: 1rem;
+	}
+	.leadnav1
+	{
+	font-size: 0.8rem;
+	}
+	.lead-card
+	{
+	font-size: 0.7rem;
+	}
+	.leadf
+	{
+	font-size: 0.9rem;	
+	}
+}
+@media only screen and (min-width:1025px) and (max-width : 1440px)
+{
+	.lead
+	{
+	font-size: 1rem;
+	}
+	.lead1
+	{
+	font-size: 1.4rem;
+	}
+	.lead2
+	{
+	font-size: 1.4rem;	
+	}
+	.display-2
+	{
+	font-size: 5.5rem;
+	}
+	.display-4
+	{
+	font-size: 3.5rem;
+	}
+	h2
+	{
+	font-size: 1.5em;
+	}
+	.leadnav
+	{
+	font-size: 1rem;
+	}
+	.leadnav1
+	{
+	font-size: 0.9rem;
+	}
+	.lead-card
+	{
+	font-size: 1rem;
+	}
+	.leadf
+	{
+	font-size: 1rem;	
+	}
+}
+@media only screen and (min-width:1441px)
+{
+	.lead
+	{
+	font-size: 1.2rem;
+	}
+	.lead1
+	{
+	font-size: 1.6rem;
+	}
+	.lead2
+	{
+	font-size: 1.6rem;	
+	}
+	.display-2
+	{
+	font-size: 6rem;
+	}
+	.display-4
+	{
+	font-size: 4rem;
+	}
+	h2
+	{
+	font-size: 1.8em;
+	}
+	.leadnav
+	{
+	font-size: 1.25rem;
+	}
+	.leadnav1
+	{
+	font-size: 1.25rem;
+	}
+	.lead-card
+	{
+	font-size: 1.25rem;
+	}
+	.leadf
+	{
+	font-size: 1.25rem	
+	}
+}
+
+/* navbar-dropdown-menu-css_start */
+.navbar-dark .navbar-nav .nav-link
+{
+	color: white;
+}
+.navbar-dark .navbar-nav .nav-link:hover 
+{
+	color: #10100E;
+	background-color: white;
+
+	border-radius: 5px;
+	transform: matrix(1.1);
+	transition: ease-in-out 0.3s;
+
+}
+.navbar .dropdown-menu  
+{
+	margin-bottom: 1rem;
+
+}
+
+.navbar .dropdown-menu 
+{
+	border: 1px solid #10100E;
+	border-radius: 0px;
+	background-color: rgba(63,63,52,0.70);
+	background-size: 100% 100%;
+
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 53px;
+	text-align: center;
+
+}
+.navbar 
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	background-image: url("Images/Background/1.jpg");
+	background-size: 100% 100%;
+}	
+
+.navbar .nav-item 
+{
+	padding: .5rem .5rem ;
+	margin: 0 .25rem ;
+}
+
+.navbar .dropdown 
+{
+	position: static;
+}
+.navbar .dropdown:hover .dropdown-menu,
+.navbar .dropdown .dropdown-menu:hover 
+{
+	display:block;
+}
+.navl
+{
+	margin: 5px 30px -10px 30px;
+}
+.nav1
+{
+	margin: 30px;
+	padding: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(255,255,255,0.9);
+}
+
+.blink-nav
+{
+	border: 1px rgba(41,40,38,0.90);
+	border-radius: 4px;
+	position: relative;
+	overflow: hidden;
+}
+.overlay-nav
+{
+	position: absolute; 
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	background-color: rgba(1,1,1,0.90);
+	color: white; 
+	width: 100%;
+	height: 100%;
+
+	transition: 0.7s ease-in-out;
+	
+	text-align: center;
+	padding: 10%;
+	opacity: 0;
+}
+.blink-nav:hover .overlay-nav 
+{
+	opacity: 1;
+	height: 100%;
+	text-align: center;
+}
+.blink-nav:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 180%;
+	height: 100%;
+	width: 50%;
+	background: rgba(255,255,255,0.6);
+	z-index: 1;
+	transform: skew(45deg);
+	transition: 1.2s;
+	
+}
+.blink-nav:hover:before
+{
+	left: -180%;
+	
+}
+
+.blink-nav img
+{
+	transform: scale(0.9);
+	/*filter: grayscale(50%);*/
+	transition: 1s;
+}
+.blink-nav:hover img
+{
+	/*filter: grayscale(0%);*/
+	transform: scale(1.1);
+}
+
+.blink-nav h2
+{
+		
+	position: absolute; 
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 1;
+	background-color: black;
+	color: white; 
+	width: 100%;
+	height: 0;
+
+	transition: 0.7s ease-in-out;
+	margin: 0% 0% -1% 0%;
+	padding: 3%;
+	opacity: 0;
+	text-align: center;
+}
+
+.blink-nav:hover h2
+{
+	opacity: 1;
+	height: 25%;
+}
+/* navbar-dropdown-menu-css_end */
+
+
+/* scroll-css-starts */		
+.sticky 
+{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	transition: 1;	
+
+}
+
+.sticky + .content 
+{
+	padding-top: 60px;
+}
+
+
+::-webkit-scrollbar 
+{
+	width: 10px;	
+}
+
+/* Track */
+::-webkit-scrollbar-track 
+{
+	background-image: url("Images/Background/1.jpg");
+	background-size: 100% 100%;
+	/*border: 2px solid #200D07;*/
+
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb 
+{
+	background-image: linear-gradient(#10100E,white,#10100E); 
+	border-radius: 10px;
+	/*border: 2px solid #200D07;*/	
+}
+
+/* ````````````````````````````````````````````Footer```````````````````````````````````` */
+
+/* jumbotron_footer-css-starts */
+
+#full-width-4
+{
+
+	background-image: url("Images/Background/1.jpg");
+	background-size: 100% 100%;
+	border: 1px solid #10100E;
+	border-radius: 0px;
+}
+.cl
+{
+	
+	text-align: center;
+}
+
+/* jumbotron_footer-css-ends */
+
+/* footer-css-starts */
+.f1
+{
+	text-align: center;
+	background-image: url("Images/Background/1.jpg");
+	background-size: 100% 100%;
+	border-top: 0px solid #10100E;
+	border-bottom: 4px solid #10100E;
+	color: white;
+	height: 60px;
+	padding-top: 10px;
+
+}
+/* footer-css-ends */
+
